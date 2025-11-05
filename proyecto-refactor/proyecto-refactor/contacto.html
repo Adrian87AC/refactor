@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web - Inicio</title>
+    <title>Mi Sitio Web - Contacto</title>
     <link rel = "stylesheet" href = "css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Mi Portfolio Personal</h1>
+        <h1>Portfolio Personal</h1>
         <p>Desarrollador Web en formación</p>
     </header>
 
@@ -18,7 +18,7 @@
                 <a class = "enlIndex" href="index.html">Inicio</a>
             </li>
             <li>
-                <a class="activo" href="sobre.html">Sobre mí</a>
+                <a class="enlIndex" href="sobre.html">Sobre mí</a>
             </li>
             <li>
                 <a class="activo" href="contacto.html">Contacto</a>
@@ -27,22 +27,22 @@
     </nav>
 
     <main>
-        <section id="bienvenida">
-            <h2>¡Bienvenido a mi espacio!</h2>
-            <p>
-                Hola, soy un estudiante apasionado del Desarrollo de Aplicaciones Web. Este es mi rincón digital donde 
-                comparto mis proyectos, mi aprendizaje y mi evolución en el mundo del código.
-            </p>
-            <p>
-                Navega por las secciones para conocerme mejor y ver en qué estoy trabajando.
-            </p>
-        </section>
+        <section class="caja-contenido">
+            <h2>Contacto</h2>
+            <p>Si quieres ponerte en contacto conmigo, rellena el siguiente formulario.</p>
 
-        <section id="proyectos-destacados">
-            <h3>Proyectos Destacados (Próximamente)</h3>
-            <div>
-                Aquí irán mis mejores trabajos. ¡Vuelve pronto!
-            </div>
+            <form action="#" method="post" class="form-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
